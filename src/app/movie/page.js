@@ -2,9 +2,13 @@ import Link from 'next/link';
 import React from 'react'
 import MovieCard from '../components/MovieCard';
 import styles from "@/app/styles/common.module.css"
+import { resolve } from 'styled-jsx/css';
 
 
 const page = async() => {
+
+    //await new Promise(executor,resolve => setTimeout(resolve, timeout(2000)));
+    await new Promise((resolve) => setTimeout(resolve, 1500));
 
   const url = process.env.RAPID_KEY;
 const options = {
@@ -23,19 +27,18 @@ const main_data= data.titles;
 
   return (
     <>
-    <section className={styles.moviSection}>
-      <div className={styles.container}>
-      <h1>Series & Movies</h1>
-      {
-        main_data.map((curElem)=>{
-          return <MovieCard key={curElem.id} {...curElem}/>
-
-        })
-      }
-      </div>
-    </section>
+      <section className={styles.moviSection}>
+        <div className={styles.container}>
+          <h1>Series & Movies</h1>
+          <div className={styles.card_section}>
+            {main_data.map((curElem) => {
+              return <MovieCard key={curElem.id} {...curElem} />;
+            })}
+          </div>
+        </div>
+      </section>
     </>
-  )
+  );
 }
 
 export default page

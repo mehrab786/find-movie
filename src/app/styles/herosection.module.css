@@ -29,7 +29,7 @@
 .hero_content h1{
     text-transform:uppercase;
     font-size: 4.8rem;
-    color: #000;
+    
 }
 
 .hero_content p{
@@ -52,7 +52,7 @@
 }
 
 /*waves effect */
-.custom-shape-divider-bottom-1681647578 {
+.custom_shape_divider_bottom_1681647578 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -61,14 +61,14 @@
     line-height: 0;
 }
 
-.custom-shape-divider-bottom-1681647578 svg {
+.custom_shape_divider_bottom_1681647578 svg {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
     height: 150px;
 }
 
-.custom-shape-divider-bottom-1681647578 .shape-fill {
+.custom_shape_divider_bottom_1681647578 .shape_fill {
     fill: #FFFFFF;
 }
 
