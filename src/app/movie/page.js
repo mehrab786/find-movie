@@ -1,11 +1,9 @@
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 import MovieCard from '../components/MovieCard';
-import styles from "@/app/styles/common.module.css"
-import { resolve } from 'styled-jsx/css';
+import styles from '@/app/styles/common.module.css';
 
-
-const page = async() => {
+const page = async () => {
 
     //await new Promise(executor,resolve => setTimeout(resolve, timeout(2000)));
     await new Promise((resolve) => setTimeout(resolve, 1500));
